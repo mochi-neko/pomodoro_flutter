@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:pomodoro_flutter/logger.dart';
 
 void main() {
+  createLogger()
+    ..t('trace')
+    ..d('debug')
+    ..i('info')
+    ..w('warning')
+    ..e('error')
+    ..f('fatal');
+
   runApp(const MyApp());
 }
 
