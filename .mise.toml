@@ -3,3 +3,18 @@ flutter = "3.24.0-stable"
 
 [plugins]
 flutter = "https://github.com/asdf-community/asdf-flutter"
+
+[settings]
+experimental = true
+
+[tasks.lint]
+description = 'Lints Dart codes.'
+run = "dart fix --apply"
+
+[tasks.format]
+description = 'Formats Dart codes.'
+run = "dart format lib"
+
+[tasks.run]
+description = 'Runs the Flutter application.'
+run = "flutter run"
