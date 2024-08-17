@@ -1,0 +1,5 @@
+[tools]
+flutter = "3.24.0-stable"
+
+[plugins]
+flutter = "https://github.com/asdf-community/asdf-flutter"
